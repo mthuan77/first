@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* reset margin , padding */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.red {
+  border: 1px solid red;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background: url("./banner.jpg") center center no-repeat;
+  background-size: cover;
+}
+.banner .about-sign-in {
+  height: 100px;
+  width: 100%;
+  text-align: right;
+}
+.banner .about-sign-in .about,
+.banner .about-sign-in .sign-in {
+  margin-top: 50px;
+  padding: 8px 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+}
+.banner .about-sign-in .sign-in {
+  margin-right: 100px;
+  margin: 25px;
+  border-radius: 30px;
+  border: 3px solid orange;
+}
+.banner .logo {
+  background: url("./logo.jpg") center center no-repeat;
+  margin-top: 100px;
+  height: 200px;
+}
+.banner .text {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 32px;
+}
+.banner .text span {
+  color: #ff6600;
+}
+.banner .btn-start-now {
+  text-align: center;
+  margin-top: 10px;
+  /* Điều chỉnh khoảng cách từ phía trên */
+}
+.banner .btn-start-now button {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 8px 15px;
+  border-radius: 30px;
+  border: 3px solid orange;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.banner .content-center .left,
+.banner .content-center .mid,
+.banner .content-center .right {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.banner .content-center .left span,
+.banner .content-center .mid span,
+.banner .content-center .right span {
+  font-size: 32;
+  color: goldenrod;
+  display: block;
+}
