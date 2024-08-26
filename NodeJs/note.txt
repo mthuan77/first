@@ -1,0 +1,4 @@
+Mo hinh MVC
+folder view noi render du lieu
+fol controller dieu huong
+route/web goi file homeController
