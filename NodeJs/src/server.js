@@ -9,22 +9,28 @@ import connectDB from "./config/connectDB";
 require("dotenv").config();
 //babel-node trinh bien dich complier nodemon --exec de tu dong chay lai
 
+//npm start lenh start duoc cau hinh trong package.json
+//lenh nodemon chay babel compiler
+//nodemon chay main:server.js
+//khoi tao app bang ham express();
 let app = express();
 
-//config app
+//config app middleware phan tich yeu cau HTTP
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+//thiet lap view
 viewEngine(app);
+//khoi tao router
 initWebRoutes(app);
-
+//ket noi database
 connectDB();
-
+//khoi dong server: cac request duoc gui ve cong duoc dinh nghia trong file .env
 let port = process.env.PORT || 6969;
 //Port === undefined=>port=6969
 
 app.listen(port, () => {
   //callback
-  console.log("Backen Nodejs is runing on the port:" + port);
+  console.log("Backend Nodejs is runing on the port:" + port);
 });
 
 //test localhost:8080

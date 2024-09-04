@@ -5,3 +5,10 @@ route/web goi file homeController
 cd ten folder/file de vao
 cd .. de quay lai
 npm start
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
+CRUD-create read update delete
+npm install --save bcrypt@2.4.3
+js thi phai export function hay bien de dung o noi khac
+import de dung
+restapi
